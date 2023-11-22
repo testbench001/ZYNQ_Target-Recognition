@@ -1,4 +1,5 @@
 # ZYNQ_Target-Recognition
+<img width="1277" alt="截图_20231122223233" src="https://github.com/testbench001/ZYNQ_Target-Recognition/assets/151752167/96164a1b-b564-43d3-a64b-0b61aab41082">
 
 > **描述：**实现了一个卷积神经网络加速器，成功搭载`Yolov3tiny`。配合摄像头采集+显示器回显环路，构建了一个高性能实时目标识别与检测系统。
 
