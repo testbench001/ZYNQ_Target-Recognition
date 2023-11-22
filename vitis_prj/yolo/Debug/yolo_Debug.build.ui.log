@@ -1,0 +1,25 @@
+2023-08-02T22:37:18.520873900255-22:37:18 **** Incremental Build of configuration Debug for project yolo ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/yolo_accel_ctrl.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/yolo_accel_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/28_YOLOv3-Tiny/ZYNQ_Prj/ch44/vitis_prj/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/yolo_accel_ctrl.d" -MT"src/yolo_accel_ctrl.o" -o "src/yolo_accel_ctrl.o" "../src/yolo_accel_ctrl.c"
+000-'Finished building: ../src/yolo_accel_ctrl.c'
+000-' '
+000-'Building target: yolo.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/28_YOLOv3-Tiny/ZYNQ_Prj/ch44/vitis_prj/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "yolo.elf"  ./src/dma_ctrl.o ./src/main.o ./src/platform.o ./src/yolo_accel_ctrl.o ./src/yolo_load_param.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: yolo.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size yolo.elf  |tee "yolo.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  59344	   3800	  25728	  88872	  15b28	yolo.elf
+000-'Finished building: yolo.elf.size'
+000-' '
+00255-
+22:37:19 Build Finished (took 1s.80ms)
+
